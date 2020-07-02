@@ -23,6 +23,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdZ8DqVUl_uTIVSad76td_MINU9vjEfE&libraries=places' }
     ]
   },
   /*
@@ -35,6 +38,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/vee-validate'
   ],
   /*
   ** Auto import components
@@ -53,7 +57,10 @@ export default {
   */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    ['nuxt-buefy', {
+      defaultIconPack: 'fas',
+      materialDesignIconsHRef: "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    }],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
@@ -61,11 +68,19 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+    baseURL: 'http://127.0.0.1:8000/api/v1'
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    transpile: ['vee-validate/dist/rules'],
+    /*
+    ** You can extend webpack config here
+    */
+    extend (config, ctx) {
+    }
   }
 }
