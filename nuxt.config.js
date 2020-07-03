@@ -25,7 +25,11 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdZ8DqVUl_uTIVSad76td_MINU9vjEfE&libraries=places' }
+      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDpdZ8DqVUl_uTIVSad76td_MINU9vjEfE&libraries=places' },
+      {
+        hid: 'tawk.to',
+        src: 'https://embed.tawk.to/58ea940230ab263079b5f1ea/default'
+      }
     ]
   },
   /*
