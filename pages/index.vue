@@ -667,7 +667,7 @@ section.top-image>a#submit {
 section.services {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 div.service-acads, div.service-sports, div.service-hobbies {
   position: relative;
@@ -687,6 +687,11 @@ div.service-acads>ul, div.service-sports>ul, div.service-hobbies>ul {
   top: 30%;
   left: 5%;
   font-size: 1.69vw;
+}
+@media (max-width: 1400px) {
+  section.service {
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 767px) {
   section.services {
