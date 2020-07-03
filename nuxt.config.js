@@ -59,7 +59,7 @@ export default {
     // Doc: https://buefy.github.io/#/documentation
     ['nuxt-buefy', {
       defaultIconPack: 'fas',
-      materialDesignIconsHRef: "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      materialDesignIconsHRef: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css'
     }],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
@@ -69,7 +69,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'http://127.0.0.1:8000/api/v1'
+    baseURL: 'https://www.edhusk.com/api/v1'
   },
   /*
   ** Build configuration
