@@ -76,11 +76,6 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-    transpile: ['vee-validate/dist/rules'],
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+    transpile: ['vee-validate/dist/rules']
   }
 }
