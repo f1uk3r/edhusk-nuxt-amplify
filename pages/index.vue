@@ -26,7 +26,7 @@
             <option
               v-for="(item, index) in optionFieldComputed"
               :key="index"
-              :value="item"
+              :value="item.link"
             >
               {{ item.text }}
             </option>
