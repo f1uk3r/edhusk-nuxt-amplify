@@ -73,7 +73,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: 'https://www.edhusk.com/api/v1'
+    baseURL: 'https://edhusk-new-test-dev.ap-south-1.elasticbeanstalk.com/api/v1'
   },
   /*
   ** Build configuration
